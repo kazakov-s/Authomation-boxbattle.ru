@@ -1,6 +1,5 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from datetime import datetime
 from pathlib import Path
 
@@ -36,12 +35,11 @@ def pytest_configure(config):
     config.option.self_contained_html = True
 
 
-@pytest.fixture(scope="class", autouse=True)
+@pytest.fixture(scope="function", autouse=True)
 def browser(request):
     global driver
     driver = webdriver.Chrome()
     yield driver
-    print("\nquit browser..")
     driver.quit()
 
 def _capture_screenshot(name):
