@@ -16,6 +16,8 @@ class LoginPageLocators:
     APPLEID_BUTTON = (By.XPATH, '//ul/li[4]/button')
     EN_BUTTON = (By.XPATH, '//p[@id="en-US"]')
     SIGNIN_SPAN = (By.CLASS_NAME, 'bb-text.text-head-32-40.color-on-surface-88')
+    RUS_BUTTON = (By.XPATH, '//p[@id="ru-RU"]')
+    ABOUT = (By.LINK_TEXT, '//a[text()="О приложении"]')
 
 
 class HomePageLocators:

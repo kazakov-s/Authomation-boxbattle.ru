@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support.wait import WebDriverWait as wdw
 from selenium.webdriver.support import expected_conditions as EC
 
 from pages.urls import USER_REGISTERED
@@ -23,17 +23,14 @@ class LoginPage(BasePage):
         # Вводим валидный пароль
         password_input.send_keys(password)
         # Находим кнопку "Войти"
-        button = WebDriverWait(self.browser, 1).until(
+        button = wdw(self.browser, 1).until(
             EC.element_to_be_clickable((By.XPATH, '//button[@type="submit"]'))
         )
         button.click()
-        # Проверяем факт авторизации
-        try:
-            element_present = EC.presence_of_element_located((By.CLASS_NAME, '//a[@class="bb-avatar"]'))
-            WebDriverWait(self.browser, 5).until(element_present)
-            assert self.browser.current_url == USER_REGISTERED
-        except:
-            pass
+        button = wdw(self.browser, 3).until(
+            EC.element_to_be_clickable((By.XPATH, '//p[text()="Главная"]'))
+        )
+        assert self.browser.current_url == USER_REGISTERED
 
     def should_be_password_recover_link(self):
         # Находим ссылку "Восстановить пароль"
@@ -41,7 +38,7 @@ class LoginPage(BasePage):
         # Ждем отрисовки формы восстановления пароля
         try:
             element_present = EC.presence_of_element_located((By.XPATH, '//form[@class="bb-password-recovery-form"]'))
-            WebDriverWait(self.browser, 5).until(element_present)
+            wdw(self.browser, 5).until(element_present)
             # Проверяем, что форма восстановления пароля открыта
             assert self.browser.find_element(*LoginPageLocators.RECOVER_TITLE)
         except:
@@ -73,12 +70,27 @@ class LoginPage(BasePage):
 
     def should_switch_to_english(self):
         # Находим кнопку "EN"
-        en = self.browser.find_element(*LoginPageLocators.EN_BUTTON).click()
+        button_present = self.browser.find_element(*LoginPageLocators.EN_BUTTON).click()
+        sleep(1)
         # Проверяем, что язык интерфейса стал английским
-        try:
-            element_present = EC.presence_of_element_located((By.CLASS_NAME, 'bb-text.text-head-32-40.color-on-surface-88'))
-            signin = WebDriverWait(self.browser, 3).until(element_present)
-            assert 'Sign in' == signin.text
-        except:
-            pass
+        element_present = EC.presence_of_element_located(
+            (By.CLASS_NAME, 'bb-text.text-head-32-40.color-on-surface-88'))
+        signin = wdw(self.browser, 3).until(element_present)
+        print(signin.text)
+        assert 'Sign in' == signin.text
 
+
+    def should_switch_to_russian(self):
+        # Предварительно переключаем язык интерфейса на английский и проверяем
+        en = self.browser.find_element(*LoginPageLocators.EN_BUTTON).click()
+        # Находим кнопку "Рус"
+        rus = self.browser.find_element(*LoginPageLocators.RUS_BUTTON).click()
+        # Проверяем, что язык интерфейса стал русским
+        element_present = EC.presence_of_element_located(
+            (By.CLASS_NAME, 'bb-text.text-head-32-40.color-on-surface-88'))
+        signin = wdw(self.browser, 3).until(element_present)
+        assert 'Вход' == signin.text
+
+    def about_page_should_open(self):
+        # Находим ссылку "О приложении"
+        wdw(self.browser, 3).until(EC.element_to_be_clickable((By.LINK_TEXT, '//a[text()="О приложении"]')))
