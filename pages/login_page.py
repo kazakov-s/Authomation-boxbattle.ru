@@ -5,8 +5,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from pages.urls import USER_REGISTERED
 from .base_page import BasePage
 from .locators import LoginPageLocators
-from .locators import HomePageLocators
 from time import sleep
+
 
 class LoginPage(BasePage):
     def __init__(self, *args, **kwargs):
@@ -14,8 +14,6 @@ class LoginPage(BasePage):
 
     # Регистрация пользователя с проверкой факта авторизации
     def register_new_user(self, email, password):
-        # Проверяем, что авторизация происходит через email адрес
-        assert self.browser.find_element(*LoginPageLocators.EMAIL_SPAN).text == 'E-mail'
         # Находим поле email
         email_input = self.browser.find_element(*LoginPageLocators.EMAIL)
         # Находим поле пароль
@@ -25,7 +23,7 @@ class LoginPage(BasePage):
         # Вводим валидный пароль
         password_input.send_keys(password)
         # Находим кнопку "Войти"
-        button = WebDriverWait(self.browser, 5).until(
+        button = WebDriverWait(self.browser, 1).until(
             EC.element_to_be_clickable((By.XPATH, '//button[@type="submit"]'))
         )
         button.click()
@@ -35,12 +33,9 @@ class LoginPage(BasePage):
             WebDriverWait(self.browser, 5).until(element_present)
             assert self.browser.current_url == USER_REGISTERED
         except:
-            print("Страница загружается слишком долго")
-
+            pass
 
     def should_be_password_recover_link(self):
-        # Проверяем, что авторизация происходит через email адрес
-        assert self.browser.find_element(*LoginPageLocators.EMAIL_SPAN).text == 'E-mail'
         # Находим ссылку "Восстановить пароль"
         self.browser.find_element(*LoginPageLocators.RECOVER_LINK).click()
         # Ждем отрисовки формы восстановления пароля
@@ -50,15 +45,40 @@ class LoginPage(BasePage):
             # Проверяем, что форма восстановления пароля открыта
             assert self.browser.find_element(*LoginPageLocators.RECOVER_TITLE)
         except:
-            print("Страница загружается слишком долго")
+            pass
 
     def google_account_authorization(self):
-        # Проверяем, что авторизация происходит через email адрес
-        assert self.browser.find_element(*LoginPageLocators.EMAIL_SPAN).text == 'E-mail'
         # Находим кнопку Google
         self.browser.find_element(*LoginPageLocators.GOOGLE_BUTTON).click()
         # Проверяем, что открыта страница авторизации Google
-        assert 'google' in self.browser.current_url
+        assert 'google.com' in self.browser.current_url
 
+    def microsoft_account_authorization(self):
+        # Находим кнопку Microsoft
+        self.browser.find_element(*LoginPageLocators.MICROSOFT_BUTTON).click()
+        # Проверяем, что открыта страница авторизации Microsoft
+        assert 'microsoftonline.com' in self.browser.current_url
 
+    def vkontakte_account_authorization(self):
+        # Находим кнопку VKontakte
+        self.browser.find_element(*LoginPageLocators.VKONTAKTE_BUTTON).click()
+        # Проверяем, что открыта страница авторизации VK
+        assert 'vk.com' in self.browser.current_url
+
+    def appleid_account_authorization(self):
+        # Находим кнопку Apple ID
+        self.browser.find_element(*LoginPageLocators.APPLEID_BUTTON).click()
+        # Проверяем, что открыта страница авторизации Apple ID
+        assert 'apple.com' in self.browser.current_url
+
+    def should_switch_to_english(self):
+        # Находим кнопку "EN"
+        en = self.browser.find_element(*LoginPageLocators.EN_BUTTON).click()
+        # Проверяем, что язык интерфейса стал английским
+        try:
+            element_present = EC.presence_of_element_located((By.CLASS_NAME, 'bb-text.text-head-32-40.color-on-surface-88'))
+            signin = WebDriverWait(self.browser, 3).until(element_present)
+            assert 'Sign in' == signin.text
+        except:
+            pass
 

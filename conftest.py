@@ -2,6 +2,7 @@ import pytest
 from selenium import webdriver
 from datetime import datetime
 from pathlib import Path
+#pip install pytest-xdist
 
 
 @pytest.hookimpl(hookwrapper=True)
