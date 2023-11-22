@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e894fb8-73ba-400b-938c-3742450e6257" name="Changes" comment="Отладка тестов">
+      <change beforePath="$PROJECT_DIR$/.idea/boxbattle.ru-Login-Form-Automation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/boxbattle.ru-Login-Form-Automation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Тест кейсы формы аворизации на сайте boxbattle.ru.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Тест кейсы формы аворизации на сайте boxbattle.ru.xlsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Setup Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2YC5MpHWdJnKWXacTd39JoeRQD2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;kazakovs&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/test_automation_project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\test_automation_project\pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_reg_form_common.TestAuthorizationForm_Basic_Functionality.test_recover_password_link">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="boxbattle.ru-Login-Form-Automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_reg_form_common.TestAuthorizationForm_Basic_Functionality" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="boxbattle.ru-Login-Form-Automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_reg_form_common.TestAuthorizationForm_Basic_Functionality&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_reg_form_common.TestAuthorizationForm_Basic_Functionality.test_recover_password_link" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="boxbattle.ru-Login-Form-Automation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_reg_form_common.TestAuthorizationForm_Basic_Functionality.test_recover_password_link&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_reg_form_common.TestAuthorizationForm_Basic_Functionality.test_recover_password_link" />
+        <item itemvalue="Python tests.Python tests for test_reg_form_common.TestAuthorizationForm_Basic_Functionality" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e894fb8-73ba-400b-938c-3742450e6257" name="Changes" comment="" />
+      <created>1700016676459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700016676459</updated>
+      <workItem from="1700016678751" duration="22727000" />
+      <workItem from="1700044128282" duration="42000" />
+      <workItem from="1700095590719" duration="233000" />
+      <workItem from="1700095834911" duration="21666000" />
+      <workItem from="1700185318153" duration="12127000" />
+      <workItem from="1700202423034" duration="5027000" />
+      <workItem from="1700212381032" duration="16000" />
+      <workItem from="1700469362470" duration="1359000" />
+      <workItem from="1700473955125" duration="97000" />
+      <workItem from="1700474102390" duration="17000" />
+      <workItem from="1700474141195" duration="67000" />
+      <workItem from="1700474224656" duration="5000" />
+      <workItem from="1700474247176" duration="10000" />
+      <workItem from="1700474270342" duration="4000" />
+      <workItem from="1700474356505" duration="9000" />
+      <workItem from="1700474414655" duration="44000" />
+      <workItem from="1700474516237" duration="15000" />
+      <workItem from="1700570112386" duration="44000" />
+      <workItem from="1700570176224" duration="16000" />
+    </task>
+    <task id="LOCAL-00001" summary="rename project">
+      <option name="closed" value="true" />
+      <created>1700039026975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700039026975</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Создание тест-кейсов">
+      <option name="closed" value="true" />
+      <created>1700043709607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700043709607</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Создание локаторов XPath">
+      <option name="closed" value="true" />
+      <created>1700112693392</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700112693392</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Дальнейшая разработка тестовых сценариев">
+      <option name="closed" value="true" />
+      <created>1700121187520</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700121187520</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Работы по автоматизации тестов">
+      <option name="closed" value="true" />
+      <created>1700196824506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700196824506</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Отладка тестов">
+      <option name="closed" value="true" />
+      <created>1700206491118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700206491118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rename project" />
+    <MESSAGE value="Создание тест-кейсов" />
+    <MESSAGE value="Создание локаторов XPath" />
+    <MESSAGE value="Дальнейшая разработка тестовых сценариев" />
+    <MESSAGE value="Работы по автоматизации тестов" />
+    <MESSAGE value="Отладка тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отладка тестов" />
+  </component>
+</project>
